@@ -17,6 +17,9 @@
         <div class="cadastrino">
             <section class="flex">
             <div>
+                <fieldset>
+                    <legend>informações basicas</legend>
+
                 <input type="text" id="nome" name="nome" required placeholder="Nome Completo">
                 <br>
 
@@ -31,6 +34,8 @@
 
                 <input type="number" id="cpf" name="cpf" required placeholder="CPF">
                 <br>
+
+                </fieldset>
 
                 <fieldset>
 
@@ -65,15 +70,23 @@
                     <input type="tel" id="numeros" name="numeros" required required minlength="9" maxlength="9" placeholder="Ultimos 9 Números">
                     <br>
                 </fieldset>
+                <fieldset>
+
+                    <legend>Familiares</legend>
+
+                    <input type="text" id="pai" name="pai" required placeholder="Progenitor Masculino">
+                    <br>
+
+                    <input type="text" id="mãe" name="mãe" required placeholder="Progenitor Feminino">
+                    <br>
+
+                </fieldset>
+
             </div>
 
             <div>
 
-                <input type="text" id="pai" name="pai" required placeholder="Progenitor Masculino">
-                <br>
-
-                <input type="text" id="mãe" name="mãe" required placeholder="Progenitor Feminino">
-                <br>
+                
                 <fieldset>
                     <legend>Estado Civil</legend>
                     <input type="radio" id="solteiro" name="estado" required>
@@ -155,21 +168,40 @@
             </div>
 
             <div>
+                <fieldset>
+
+                <legend>teste de personalidade </legend>
+
+                <input type="color" id="favorita" name="favorita" required>
+                <label for="favorita"> Qual sua Cor favorita?</label>
                 <br>
+
+                <input type="color" id="cabelo" name="cabelo" required>
+                <label for="cabelo"> Qual a Cor do seu cabelo?</label>
+                <br>
+
+                <input type="color" id="tenis" name="tenis" required>
+                <label for="tenis"> Qual a Cor do seu tenis?</label>
+                <br>
+                
                 <input type="color" id="carroc" name="carroc" required >
                 <label for="carroc"> Qual cor você pintaria seu Carro?
                 </label>
                 <br>
 
+                </fieldset>
+                <br>
+                
+
                 <fieldset>
 
                     <legend>Você é Daltonico?</legend>
 
-                    <input type="radio" id="sdaltonico" name="sdaltonico" required >
+                    <input type="radio" id="sdaltonico" name="daltonico" required >
                     <label for="sdaltonico"> Sim</label>
                     <br>
 
-                    <input type="radio" id="ndaltonico" name="ndaltonico" required >
+                    <input type="radio" id="ndaltonico" name="daltonico" required >
                     <label for="ndaltonico"> Não</label>
                     <br>
 
@@ -181,33 +213,62 @@
 
             <section class="flex">
             <div>
-
-                <input type="text" id="coisa" name="coisa" required placeholder="coisa">
-                <br>
-
-                <input type="text" id="coisa" name="coisa" required placeholder="coisa">
-                <br>
-
-                <input type="text" id="coisa" name="coisa" required placeholder="coisa">
-                <br>
+                
 
             </div>
 
             <div>
 
-                <input type="text" id="coisa" name="coisa" required placeholder="coisa">
-                <br>
+                <fieldset class="Passado">
+                    <legend>Passado</legend>
+                    <div class="passadinho">
+                        
+                        <p>Você tem tatuagem de palhaço?</p>
+                        <input type="radio" id="statuagem" name="tatuagem" required >
+                        <label for="statuagem"> Sim</label>
+                        <br>
 
-                <input type="text" id="coisa" name="coisa" required placeholder="coisa">
-                <br>
+                        <input type="radio" id="ntatuagem" name="tatuagem" required >
+                        <label for="ntatuagem"> Não</label>
+                        <br>
 
-                <input type="text" id="coisa" name="coisa" required placeholder="coisa">
-                <br>
+                        <p>Você já participou de grupos no WhatsApp com nomes suspeitos?</p>
+                        <input type="radio" id="sfaccao" name="faccao" required >
+                        <label for="sfaccao"> Sim</label>
+                        <br>
 
-                <input type="text" id="coisa" name="coisa" required placeholder="coisa">
-                <br>
+                        <input type="radio" id="nfaccao" name="faccao" required >
+                        <label for="nfaccao"> Não</label>
+                        <br>
+            
+                    </div>
+
+                    <div class="passadinho">
+
+                        <p>Seus piercings causam medo em idosos?</p>
+                        <input type="radio" id="spiercing" name="piercing" required >
+                        <label for="spiercing"> Sim</label>
+                        <br>
+
+                        <input type="radio" id="npiercing" name="piercing" required >
+                        <label for="npiercing"> Não</label>
+                        <br>
+
+                        <p>Você Levou ban no Counter strike?</p>
+                        <input type="radio" id="scsgo" name="csgo" required >
+                        <label for="scsgo"> Sim</label>
+                        <br>
+
+                        <input type="radio" id="ncsgo" name="csgo" required >
+                        <label for="ncsgo"> Não</label>
+                        <br>
+
+                    </div>
+
+                </fieldset>
 
             </div>
+
 
             
         
@@ -217,11 +278,17 @@
             <br>
 
             <div>
+                <fieldset>
+
+                <legend>Senha</legend>
+
                 <input type="password" id="senha" name="senha" required placeholder="Senha">
                 <br>
 
                 <input type="password" id="csenha" name="csenha" required placeholder="Confirmar Senha">
                 <br>
+
+                </fieldset>
             </div>
         </div>
     </main>

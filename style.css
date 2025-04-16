@@ -1,5 +1,55 @@
 .flex{
+}
+
+header{
+    background-color: rgb(17, 9, 136);
+    color: white;
     display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    position: fixed;
+    padding: 20px;
+    background-color: black;
+    color: white;
+}
+main{ 
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+   
+body{
+    background-color: rgb(17, 9, 136);
+    color:white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.passadinho{
+    justify-content: center;
+    margin: 5px;
+    padding: 5px;
+}
+
+.passado{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.cadastrino{
+    margin: 20px;
+    padding: 5px;
+    border: solid;
+    border-color: white;
+    border-radius: 15px;
+    background-color: rgba(8, 0, 110, 0.815);
 }
 
 fieldset{
