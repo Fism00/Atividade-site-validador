@@ -26,7 +26,8 @@
                 <input type="number" id="idade" name="idade" required minlength="1" maxlength="3" placeholder="idade">
                 <br>
 
-                <input type="date" id="nascimento" name="nascimento" required placeholder="Data de nascimento">
+                <label for="nascimento"> Data de nascimento</label>
+                <input type="date" id="nascimento" name="nascimento" required>
                 <br>
 
                 <input type="email" id="email" name="email" required placeholder="Seu Email">
@@ -247,7 +248,7 @@
 
                     <div class="passadinho">
 
-                        <p>Seus piercings causam medo em idosos?</p>
+                        <p>Seus piercings causam medo em idosos? (se não tiver piercings coloque não)</p>
                         <input type="radio" id="spiercing" name="piercing" required >
                         <label for="spiercing"> Sim</label>
                         <br>
@@ -292,7 +293,19 @@
 
                 </fieldset>
             </div>
+
+            <br>
+            <br>
+
+            <fieldset>
+
+                <legend>Enviar Formulario</legend>
+
+                <input type="submit" onclick="validadorjs()" name="submit">
+            
+            </fieldset>
         </div>
+        
     </main>
 
     <footer>
