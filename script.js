@@ -3,7 +3,10 @@ function validadorjs() {
     const cpf = document.getElementById('cpf').value.trim();
     const nascimento = document.getElementById('nascimento').value.trim();
     const idade = parseInt(document.getElementById('idade').value, 10);
-    
+    const genero = document.getElementsByName('genero').value.trim();
+
+    console.log(genero);
+
     console.log(/^[a-zA-Z\s]+$/.test(nome));
 
 
@@ -18,6 +21,7 @@ function validadorjs() {
     }
 
     if(!nascimento){
+        alert('Por Favor, Preencha Corretamente a sua data de nascimento!')
     }
 
     if(!cpf || cpf.length !== 11 || isNaN(cpf)){
